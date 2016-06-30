@@ -32,3 +32,8 @@ social:
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
     url: 
+
+# ----------------------- #
+# Google Analytics
+# ----------------------- #
+google_analytics: # Enter your tracking code (e.g. UA-2110908-2) to activate tracking
