@@ -1,11 +1,18 @@
-<!-- jQuery Version 1.11.0 -->
-<script src="js/jquery-1.11.0.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="{{ "js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+<!-- jQuery Version 1.12.3 -->
+{% if site.theme.cdn.jquery %}
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script>window.jQuery || document.write('<script src="/_bower_components/jquery/jquery.min.js"><\/script>')</script>
+{% endif %}
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+{% if site.theme.cdn.bootstrapjs %}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+{% endif %}
 
-<!-- Custom Theme JavaScript -->
+<!-- build:js(app) /js/script.js -->
+<!-- Plugins JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Site's Scripts -->
 <script src="js/landing-page.js"></script>
+<!-- endbuild -->

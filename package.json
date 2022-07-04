@@ -1,0 +1,36 @@
+{
+  "name": "whatever-landing-page",
+  "version": "1.0.0",
+  "description": "A landing page starter with jekyll",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeblini/wathever-landing-page.git"
+  },
+  "author": "Felipe Blini (felipeblini.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipeblini/wathever-landing-page/issues"
+  },
+  "homepage": "https://github.com/felipeblini/wathever-landing-page#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~1.0.1",
+    "grunt-browser-sync": "~1.3.6",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-htmlmin": "~0.3.0",
+    "grunt-contrib-imagemin": "~0.8.1",
+    "grunt-filerev": "~0.2.1",
+    "grunt-jekyll": "~0.4.2",
+    "grunt-usemin": "~2.4.0",
+    "jshint-stylish": "^2.2.0",
+    "load-grunt-tasks": "~0.6.0",
+    "time-grunt": "~0.4.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

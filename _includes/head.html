@@ -8,15 +8,23 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+    {% if site.theme.cdn.bootstrap %}
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    {% endif %}
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    {% if site.theme.google_fonts %}
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family={{ site.theme.google_fonts }}" rel="stylesheet" type="text/css">
+    {% endif %}
+    
+    {% if site.theme.cdn.fontawesome %}
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    {% endif %}
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- Open All Links In A New Tab/Window -->
     <base target="_blank">
